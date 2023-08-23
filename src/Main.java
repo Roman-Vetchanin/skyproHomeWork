@@ -54,7 +54,7 @@ public class Main {
         var workers = amountOfHours/hoursPerWorker;
         System.out.println("Всего работников в компании — "+workers+ " человек");
         workers = workers+94;
-        var lessHours = amountOfHours%workers;
+        var lessHours = hoursPerWorker*workers;
         System.out.println("Если в компании работает "+workers+ " человек, то всего "+lessHours+" часов работы может быть поделено между сотрудниками.");
     }
 }
