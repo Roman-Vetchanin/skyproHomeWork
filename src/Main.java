@@ -8,35 +8,35 @@ public class Main {
         System.out.println("Переменная cat = "+cat);
         System.out.println("Переменная paper = "+paper);
         //задача №2
-        var dog2 = dog+4;
-        var cat2 = cat+4;
-        var paper2 = paper+4;
-        System.out.println("Переменная dog = "+dog2);
-        System.out.println("Переменная cat = "+cat2);
-        System.out.println("Переменная paper = "+paper2);
+        dog = dog+4;
+        cat = cat+4;
+        paper = paper+4;
+        System.out.println("Переменная dog = "+dog);
+        System.out.println("Переменная cat = "+cat);
+        System.out.println("Переменная paper = "+paper);
         //задача №3
-        var dog3 = dog-3.5;
-        var cat3 = cat-1.6;
-        var paper3 = paper-7639;
-        System.out.println("Переменная dog = "+dog3);
-        System.out.println("Переменная cat = "+cat3);
-        System.out.println("Переменная paper = "+paper3);
+        dog = dog-3.5;
+        cat = cat-1.6;
+        paper = paper-7639;
+        System.out.println("Переменная dog = "+dog);
+        System.out.println("Переменная cat = "+cat);
+        System.out.println("Переменная paper = "+paper);
         //задача №4
         var friend = 19;
         System.out.println("Переменная friend = " +friend);
-        var friendPlus = friend+2;
-        System.out.println("сложение " +friendPlus);
-        var friendDivide = friendPlus/7;
-        System.out.println("деление "+friendDivide);
+        friend = friend+2;
+        System.out.println("сложение " +friend);
+        friend = friend/7;
+        System.out.println("деление "+friend);
         //задача №5
         var frog = 3.5;
         System.out.println("Переменная frog = " + frog);
-        var frogMultiplication = frog*10;
-        System.out.println("Умножение на 10 переменной frog = "+frogMultiplication);
-        var frogDivide = frogMultiplication/3.5;
-        System.out.println("Деление на 3.5 переменной frog = "+frogDivide);
-        var frogPlus = frogDivide+4;
-        System.out.println("Сложение переменной frog = "+frogPlus);
+        frog = frog*10;
+        System.out.println("Умножение на 10 переменной frog = "+frog);
+        frog = frog/3.5;
+        System.out.println("Деление на 3.5 переменной frog = "+frog);
+        frog = frog+4;
+        System.out.println("Сложение переменной frog = "+frog);
         //задача №6
         var boxer1 = 78.2;
         var boxer2 = 82.7;
@@ -49,11 +49,12 @@ public class Main {
         var boxerRemainder = boxer2%boxer1;
         System.out.println("Остаток от деления ="+boxerRemainder+" кг");
         //задача №8
-        var hours = 640;
-        var workers = hours/8;
+        var amountOfHours = 640;
+        var hoursPerWorker = 8;
+        var workers = amountOfHours/hoursPerWorker;
         System.out.println("Всего работников в компании — "+workers+ " человек");
-        var plusWorkers = workers+94;
-        var lessHours = hours/plusWorkers;
-        System.out.println("Если в компании работает "+plusWorkers+ " человек, то всего "+lessHours+" часа работы может быть поделено между сотрудниками.");
+        workers = workers+94;
+        var lessHours = amountOfHours%workers;
+        System.out.println("Если в компании работает "+workers+ " человек, то всего "+lessHours+" часов работы может быть поделено между сотрудниками.");
     }
 }
