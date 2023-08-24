@@ -5,18 +5,22 @@ public class Main {
         short b = 30000;
         int c = 123123123;
         long d = 123123123123L;
+        float e = 123123.12234f;
+        double f = 123.1241243132;
         System.out.println("Значение переменной a с типом byte = "+a);
         System.out.println("Значение переменной b с типом short = "+b);
         System.out.println("Значение переменной c с типом int = "+c);
         System.out.println("Значение переменной d с типом long = "+d);
+        System.out.println("Значение переменной e с типом float= "+e);
+        System.out.println("Значение переменной f с типом double= "+f);
 
         //задача №2
-        float e = 27.12f;
-        long f = 987678965549L;
-        float g = 2786f;
-        short h = 569;
-        short i = 27897;
-        byte j = 67;
+        float g = 27.12f;
+        long h = 987678965549L;
+        float i = 2786f;
+        short j = 569;
+        short k = 27897;
+        byte l = 67;
 
         //задача №3
         byte studentsLudmilaPavlovna = 23;
@@ -87,15 +91,15 @@ public class Main {
         int percentForDenis = (int) (denis+(denis*percentage));
         int percentForKristina = (int) (kristina+(kristina*percentage));
 
-        int daysInYear = 12;
+        int monthInYear = 12;
 
-        int incomeInYearMashaOld = masha*daysInYear;
-        int incomeInYearDenisOld = denis*daysInYear;
-        int incomeInYearKristinaOld = kristina*daysInYear;
+        int incomeInYearMashaOld = masha*monthInYear;
+        int incomeInYearDenisOld = denis*monthInYear;
+        int incomeInYearKristinaOld = kristina*monthInYear;
 
-        int incomeInYearMashaNew = percentForMasha*daysInYear;
-        int incomeInYearDenisNew = percentForDenis*daysInYear;
-        int incomeInYearKristinaNew = percentForKristina*daysInYear;
+        int incomeInYearMashaNew = percentForMasha*monthInYear;
+        int incomeInYearDenisNew = percentForDenis*monthInYear;
+        int incomeInYearKristinaNew = percentForKristina*monthInYear;
 
         int incomeDifferenceMasha = incomeInYearMashaNew-incomeInYearMashaOld;
         int incomeDifferenceDenis = incomeInYearDenisNew-incomeInYearDenisOld;
