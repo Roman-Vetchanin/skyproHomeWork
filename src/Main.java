@@ -82,6 +82,7 @@ public class Main {
         System.out.println("Если спортсмен будет худеть по "+minus250Gramm+" грамм то потребуется "+gramsPerDay250+" дней, а если будет худеть по "+minus500Gramm+" грамм то потребуется "+gramsPerDay500+" дней. Срденее количество дней "+ averageNumberOfDays);
 
         //задача №8
+        variables-part2
         int masha = 67760;
         int denis = 83690;
         int kristina = 76230;
@@ -108,5 +109,14 @@ public class Main {
         System.out.println("Маша теперь получает "+percentForMasha+" рублей. Годовой доход вырос на "+incomeDifferenceMasha+" рублей");
         System.out.println("Денис теперь получает "+percentForDenis+" рублей. Годовой доход вырос на "+incomeDifferenceDenis+" рублей");
         System.out.println("Кристина теперь получает "+percentForKristina+ " рублей. Годовой доход вырос на "+incomeDifferenceKristina+" рублей");
+
+        var amountOfHours = 640;
+        var hoursPerWorker = 8;
+        var workers = amountOfHours/hoursPerWorker;
+        System.out.println("Всего работников в компании — "+workers+ " человек");
+        workers = workers+94;
+        var lessHours = hoursPerWorker*workers;
+        System.out.println("Если в компании работает "+workers+ " человек, то всего "+lessHours+" часов работы может быть поделено между сотрудниками.");
+
     }
 }
