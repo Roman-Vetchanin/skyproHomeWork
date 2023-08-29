@@ -1,60 +1,88 @@
 public class Main {
     public static void main(String[] args) {
         // задача №1
-        var dog = 8.0;
-        var cat = 3.6;
-        var paper = 763789;
-        System.out.println("Переменная dog = "+dog);
-        System.out.println("Переменная cat = "+cat);
-        System.out.println("Переменная paper = "+paper);
+        int age = 14;
+        if (age <= 18) {
+            System.out.println("Товй возраст " + age + " , нужно немного подождать");
+        } else {
+            System.out.println("Товй возраст " + age + " , ты достиг совершеннолетия!");
+        }
         //задача №2
-        dog = dog+4;
-        cat = cat+4;
-        paper = paper+4;
-        System.out.println("Переменная dog = "+dog);
-        System.out.println("Переменная cat = "+cat);
-        System.out.println("Переменная paper = "+paper);
-        //задача №3
-        dog = dog-3.5;
-        cat = cat-1.6;
-        paper = paper-7639;
-        System.out.println("Переменная dog = "+dog);
-        System.out.println("Переменная cat = "+cat);
-        System.out.println("Переменная paper = "+paper);
-        //задача №4
-        var friend = 19;
-        System.out.println("Переменная friend = " +friend);
-        friend = friend+2;
-        System.out.println("сложение " +friend);
-        friend = friend/7;
-        System.out.println("деление "+friend);
-        //задача №5
-        var frog = 3.5;
-        System.out.println("Переменная frog = " + frog);
-        frog = frog*10;
-        System.out.println("Умножение на 10 переменной frog = "+frog);
-        frog = frog/3.5;
-        System.out.println("Деление на 3.5 переменной frog = "+frog);
-        frog = frog+4;
-        System.out.println("Сложение переменной frog = "+frog);
-        //задача №6
-        var boxer1 = 78.2;
-        var boxer2 = 82.7;
-        var boxersWeight = boxer1+boxer2;
-        var boxersDifference = boxer2-boxer1;
-        System.out.println("Общий вес боксеров = "+boxersWeight+" кг");
-        System.out.println("Разница веса боксеров = "+boxersDifference+" кг");
-        //задача №7
-        System.out.println("Разница веса боксеров = "+boxersDifference+" кг");
-        var boxerRemainder = boxer2%boxer1;
-        System.out.println("Остаток от деления ="+boxerRemainder+" кг");
-        //задача №8
-        var amountOfHours = 640;
-        var hoursPerWorker = 8;
-        var workers = amountOfHours/hoursPerWorker;
-        System.out.println("Всего работников в компании — "+workers+ " человек");
-        workers = workers+94;
-        var lessHours = amountOfHours%workers;
-        System.out.println("Если в компании работает "+workers+ " человек, то всего "+lessHours+" часов работы может быть поделено между сотрудниками.");
+        int temperature = 2;
+        if (temperature <= 5) {
+            System.out.println("На улице " + temperature + " градуса(ов), нужно надеть шапку");
+        } else {
+            System.out.println("На улице " + temperature + " градуса(ов), можно идти без шапки");
+        }
+        //Задача №3
+        int speed = 62;
+        if (speed <= 60) {
+            System.out.println("Ваша скрость " + speed + " км/ч, можно ездить спокойно");
+        } else {
+            System.out.println("Ваша скрость " + speed + " км/ч, приедется заплатить штраф");
+        }
+        //Задача №4 переменная age взята из первой задачи
+        boolean kindergarten = age >= 2 && age <= 6;
+        boolean school = age >= 7 && age <= 18;
+        boolean university = age >= 18 && age <= 24;
+        boolean workAge = age >= 24;
+
+        if (kindergarten) {
+            System.out.println("Если возраст человека равен " + age + ", то ему нужно ходить в детский сад");
+        } else {
+            if (school) {
+                System.out.println("Если возраст человека равен " + age + ", то ему нужно ходить в школу");
+            } else {
+                if (university) {
+                    System.out.println("Если возраст человека равен " + age + ", то ему нужно ходить в университет");
+                } else {
+                    if (workAge) {
+                        System.out.println("Если возраст человека равен " + age + ", то ему нужно ходить на работу");
+                    }
+                }
+            }
+
+        }
+
+        //Задача №5 переменная age взята из первой задачи
+        if (age <5){
+            System.out.println("Если возраст ребенка равен "+age+" то ему нельзя кататься на аттрационе");
+        }else {
+            if (age >=5 && age <=14){
+                System.out.println("Если возраст ребенка равен "+age+" можно кататься на аттрационе, но в сопровождении взрослого");
+            }else {
+                if (age >14){
+                    System.out.println("Если возраст ребенка равен "+age+" можно кататься на аттракционе без сопровождения взрослого");
+                }
+            }
+        }
+        //Задача №6
+        int capacity = 102;
+        int passengers = 10;
+        if(passengers < 60){
+            System.out.println("В вагоне еще есть сидячие места");
+        }else {
+            if (passengers >= 60 && capacity>passengers){
+                System.out.println("В вагоне остались стоячие места");
+            }else {
+                System.out.println("В вагоне нет мест");
+            }
+        }
+        //Задача №7
+        int one = 3;
+        int two = 3;
+        int three = 3;
+
+        if (one > two && one > three){
+            System.out.println("Число one больше");
+        }else {
+            if (two>one && two > three) {
+                System.out.println("Число two больше");
+            }else {
+                if (three > one && three > two){
+                    System.out.println("Число three больше");
+                }
+            }
+        }
     }
 }
