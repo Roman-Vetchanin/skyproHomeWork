@@ -19,7 +19,7 @@ public class Main {
         } else if (clientOC == 1&&clientDeviceYear>2015) {
             System.out.println("Установите версию приложения для Android по ссылке");
         } else {
-            System.out.println("Установите облегченную версию приложения для Android по ссылке");
+            System.out.println("Установите облегченную версию приложения для Android по ссылке.");
         }
         //Задача №3
         int year = 2024;
