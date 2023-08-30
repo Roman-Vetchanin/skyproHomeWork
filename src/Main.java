@@ -38,7 +38,7 @@ public class Main {
         } else if (deliveryDistance>=60&&deliveryDistance<=100) {
             System.out.println("Доставка будет осуществлена в течение 3 дней");
         }else {
-            System.out.println("Ваше расположение не входит в зону обслуживания нашей компании");
+            System.out.println("Ваше расположение не входит в зону обслуживания нашей компании.");
         }
         //Задача №5
         int monthNumber = 3;
